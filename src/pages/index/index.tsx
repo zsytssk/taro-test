@@ -1,24 +1,14 @@
-import { Component, PropsWithChildren } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.less'
+import PickerTest from "@/demo/pickerTest2";
+import { ModalManager } from "@/wui/Modal";
+import { View } from "@tarojs/components";
+import "./index.less";
 
-export default class Index extends Component<PropsWithChildren> {
+export default function Index() {
 
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
-    return (
-      <View className='index'>
-        <Text>Hello world!</Text>
-      </View>
-    )
-  }
+  return (
+    <View className="index">
+      <PickerTest/>
+      <ModalManager/>
+    </View>
+  );
 }

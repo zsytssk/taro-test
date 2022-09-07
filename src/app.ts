@@ -1,18 +1,16 @@
-import { Component, PropsWithChildren } from 'react'
-import './app.less'
+import { useEffect } from "react";
 
-class App extends Component<PropsWithChildren> {
+import * as test from "./test/test";
 
-  componentDidMount () {}
+import "./app.less";
 
-  componentDidShow () {}
+function App(props) {
+  useEffect(() => {
+    global.test = test;
+  }, []);
 
-  componentDidHide () {}
-
-  render () {
-    // this.props.children 是将要会渲染的页面
-    return this.props.children
-  }
+  // props.children 是将要会渲染的页面
+  return props.children;
 }
 
-export default App
+export default App;
