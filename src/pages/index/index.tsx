@@ -7,7 +7,7 @@ export default function Index() {
 
   return (
     <View className="index">
-      <SwiperTest/>
+      <SwiperTest/>·
       {/* <PickerTest/> */}
       <ModalManager/>
     </View>
